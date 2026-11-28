@@ -65,8 +65,10 @@ corepack pnpm start
 
 ## Estructura
 
-- `src/app/`: rutas, layout y estilos de la aplicación.
-- `public/`: recursos públicos.
+- `src/app/`: rutas, layout y tokens globales de la aplicación.
+- `src/components/ui/`: primitivas de botones, campos y tarjetas.
+- `src/components/shared/`: estados compartidos, badges y selector de tema.
+- `public/brand/`: logotipos y favicon oficiales del manual de marca.
 - `docs/adr/`: decisiones de arquitectura.
 - `docs/assets/`: recursos usados por la documentación.
 - `.github/workflows/`: validación continua del repositorio.
@@ -87,9 +89,10 @@ El contrato funcional de backend se mantiene fuera de este repositorio, en `../c
 
 ## Estado actual
 
-- Scaffold vacío de Next.js.
-- CI inicial para instalación, lint, typecheck y build.
-- Sin pantallas de negocio, integración HTTP, Docker ni despliegue configurado.
+- Base visual con tokens La Planta Común, fuentes autoalojadas y modo claro/oscuro.
+- Primitivas accesibles y estados compartidos de carga, vacío, error y éxito.
+- CI inicial para instalación, lint, typegen, typecheck y build.
+- Sin módulos de negocio, integración HTTP, Docker ni despliegue configurado.
 
 ## Autor
 
